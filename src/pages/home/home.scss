@@ -1,0 +1,11 @@
+.home {
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+  }
+  background-color: #141414;
+  height: auto;
+  min-height: 100vh;
+}

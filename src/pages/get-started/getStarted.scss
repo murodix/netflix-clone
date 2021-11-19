@@ -1,0 +1,66 @@
+@use '../../styles/shared';
+
+.getStarted {
+  @include shared.addBackground('get-started.jpg');
+  height: auto;
+  min-height: 100vh;
+  overflow-y: hidden;
+
+  &__mask {
+    min-height: inherit;
+    @include shared.addBackgroundGradient();
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 75px 0;
+  }
+
+  &__title {
+    font-size: 4rem;
+    margin: 0;
+  }
+
+  &__form {
+    &-container {
+      display: flex;
+    }
+
+    &-input,
+    &-button {
+      height: 60px;
+      border: none;
+    }
+
+    &-input {
+      flex: 2;
+      font-size: 1rem;
+      padding: 10px;
+      outline-width: 0;
+    }
+
+    &-button {
+      flex: 1;
+      font-size: 1.5rem;
+      color: white;
+      background-color: #e50914;
+      border-color: #e50914;
+      &:hover {
+        background: #f40612;
+        box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+        cursor: pointer;
+      }
+    }
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: #fff;
+  }
+}
